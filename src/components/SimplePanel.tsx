@@ -9,8 +9,11 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height }) =
   const inputRef = React.useRef<HTMLInputElement>(null);
 
   const onButtonClick = () => {
+    // add your logic here for what you want to do with the value
+    // use inputRef.current?.value to get the value
     console.log(inputRef.current?.value);
   };
+
 
   return (
     <div>
