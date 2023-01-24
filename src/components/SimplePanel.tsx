@@ -14,7 +14,7 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height }) =
 
   return (
     <div>
-      <h3>Simple Panel</h3>
+      <h3>Input a value</h3>
       <div style={{
         display: 'flex',
         flexDirection: 'row',
