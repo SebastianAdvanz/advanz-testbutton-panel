@@ -1,0 +1,14 @@
+version: '3.0'
+
+services:
+  grafana:
+    container_name: 'advanz-testbutton-panel'
+    build:
+      context: ./.config
+      args:
+        grafana_version: ${GRAFANA_VERSION:-9.2.5}
+    ports:
+      - 3000:3000/tcp
+    volumes:
+      - ./dist:/var/lib/grafana/plugins/advanz-testbutton-panel
+      - ./provisioning:/etc/grafana/provisioning
